@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   <title>Site Run'Zik</title>
 </head>
 
 <body>
   <header>
-    <div class="logo">RUN'ZIK</div>
+    <div class="logo">
+    <img src="./img/logo-img.png" alt="logo" class="logo">
+  </div>
     <nav>
       <a href="">Acceuil</a>
       <a href="">Mon compte</a>
@@ -22,11 +26,11 @@
 
   <main>
     <section class="section-1">
-      <article class="article-1">Homme</article>
-      <article class="article-1">Femme</article>
-      <article class="article-1">Montre</article>
-      <article class="article-1">Enfant</article>
-      <article class="article-1">Accessoires</article>
+      <a href=""><article class="article-1">Homme</article></a>
+      <a href=""><article class="article-2">Femme</article></a>
+      <a href=""><article class="article-3">Montre</article></a>
+      <a href=""><article class="article-4">Enfant</article></a>
+      <a href=""><article class="article-5">Accessoires</article></a>
     </section>
   </main>
   <article>
@@ -35,57 +39,81 @@
       <h2>Selection du moment</h2>
 
       <div class="slider">
-        <img class="active" src="">
+        <div class="item-main">
+          <img src="./img/ensemble-de-vetements-de-sport-homme-3pieces-maill.webp" alt="homme">
+          <div class="active">Vétements homme</div>
+        </div>
 
-        <img class="active" src="">
+        <div class="item-main">
+          <img
+            src="./img/leggings-mili-rose-2-pcs-vetement-de-sport-femme-fitness-yoga-running-s-north-athletik_868_800x.jpg"
+            alt="femme">
+          <div class="active">Vétements femme</div>
+        </div>
 
-        <img class="active" src="">
+        <div class="item-main">
+          <img src="./img/pantalon-de-sport-garcon-en-molleton-oeko-tex.jpg" alt="enfant">
+          <div class="active">Vétements enfants</div>
+        </div>
 
-        <img class="active" src="">
+        <div class="item-main">
+          <img src="./img/haltere-poid-vinyle.jpg" alt="Accessoires">
+          <div class="active">Accéssoires</div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="cont-btn">
+          <div class="btn-nav left">←</div>
+          <div class="btn-nav right">→</div>
+        </div>
+
       </div>
 
 
-      <div class="cont-btn">
-        <div class="btn-nav left">←</div>
-        <div class="btn-nav right">→</div>
-      </div>
-
-    </div>
-
-
-    <!-- fin slide -->
-    <section id="conteneur">
-      <div class="infos">
-        <h2>INFOS RAPIDE</h2>
-        <ul>
-          <li>Téléphone: 03.45.65.78.22</li>
-          <li>E-mail: blablabla.com</li>
-          <li>Adresse: 133 Rue Saint-Thomas 59500 Douai</li>
-        </ul>
-      </div>
-    </section>
-
-    <footer>
-      <nav class="footer">
-        <div>
+      <!-- fin slide -->
+      <section id="conteneur">
+        <div class="infos">
+          <h2>INFOS RAPIDE</h2>
           <ul>
-            <li><a href="#">Retour</a>
-            </li>
-            <li>
-              <a href="">Mon compte</a>
-            </li>
-            <li>
-              <a href="">Panier</a>
-            </li>
+            <li>Téléphone: 03.45.65.78.22</li>
+            <li>E-mail: blablabla.com</li>
+            <li>Adresse: 133 Rue Saint-Thomas 59500 Douai</li>
           </ul>
         </div>
-      </nav>
+      </section>
 
-      <div class="logo">
-        <img src="./img/logo-img.png" alt="logo" class="logo1">
-      </div>
-    </footer>
-    <script type="text/javascript" src="scrypt.js"></script>
+      <footer>
+        <nav class="footer">
+          <div class="carte">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.707767349534!2d3.080574515855682!3d50.37200340089503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2c942d7dc21f5%3A0x617700e851297eae!2s133%20Rue%20Saint-Thomas%2C%2059500%20Douai!5e0!3m2!1sfr!2sfr!4v1634893181322!5m2!1sfr!2sfr" width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#">Retour</a>
+              </li>
+              <li>
+                <a href="">Mon compte</a>
+              </li>
+              <li>
+                <a href="">Panier</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="logo">
+          <img src="./img/logo-img.png" alt="logo" class="logo1">
+        </div>
+      </footer>
+      <script type="text/javascript" src="scrypt.js"></script>
 </body>
 
 </html>
+
+
