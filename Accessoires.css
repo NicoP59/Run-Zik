@@ -1,0 +1,20 @@
+
+/* **********NAV********** */
+
+ header {
+    background-color: rgb(89, 89, 255);
+    height: 20vh;
+    display: flex;
+}
+
+nav a{
+  
+}
+
+ 
+.logo {
+ width: 20vw;
+ height: 20vh;
+ }
+  
+  
