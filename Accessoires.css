@@ -1,20 +1,296 @@
-
-/* **********NAV********** */
-
- header {
-    background-color: rgb(89, 89, 255);
-    height: 20vh;
-    display: flex;
+/* fait par nico */
+/* **********TOUTE LA PAGE********** */
+* {
+  margin: 0;
+  overflow-x: hidden;
 }
 
-nav a{
-  
+a {
+  text-decoration: none;
+  color: aliceblue;
 }
 
- 
+/* **********header nav********** */
+
+header {
+  background-color: rgb(89, 89, 255);
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.div-header {
+  padding-right: 20px;
+  font-size: 2em;
+}
+
+.div-logo {
+  overflow-y: hidden;
+}
+
 .logo {
- width: 20vw;
- height: 20vh;
- }
-  
-  
+  width: 20vw;
+  height: 15vh;
+}
+
+/* **********PRESENTATION********** */
+
+article {
+  display: flex;
+  margin: 20px;
+  height: 40vh;
+}
+.presentation1 {
+  width: 50%;
+}
+
+.presentation2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 8em;
+  text-align: center;
+}
+.div-p1 {
+  text-align: center;
+  color: black;
+  font-size: 3em;
+}
+
+.recherche {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 3vh;
+}
+
+/* **********ACCESSOIRES********** */
+
+.BIGBOSS {
+  display: flex;
+  background-color: white;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  /* display: grid; Si plus de photos */
+}
+
+.card {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.div-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80%;
+}
+.card-p {
+  height: 20vh;
+}
+
+.div-info {
+  display: flex;
+  width: 105%;
+}
+.div-b {
+  width: 100%;
+  margin: 20px;
+  font-size: 2em;
+}
+button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* **********FOOTER********** */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  color: var(--cardTechs);
+  background-color: var(--car-bg);
+  border-top: var(--borderStyle);
+  box-shadow: 0px -1px 4px -1px rgb(207 207 207);
+  margin-top: 50px;
+  padding-top: 15px;
+}
+
+.bigContainer {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding-bottom: 10px;
+  border-bottom: var(--borderBottomStyle);
+}
+
+.newsletter {
+  text-align: center;
+  width: 50%;
+  height: auto;
+}
+
+.followUs {
+  text-align: center;
+  width: 50%;
+  height: auto;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 18px 0 10px 0;
+}
+
+.copyright a {
+  position: relative;
+  left: 10px;
+  bottom: 1px;
+}
+
+.imglogos {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.imgFacebook {
+  position: relative;
+  left: -6px;
+}
+
+.imgTwitter {
+  position: relative;
+  left: -4px;
+}
+
+.imglogos:hover {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.titleNewsletter {
+  font-size: 30px;
+}
+
+.titleFollowUs {
+  font-size: 30px;
+}
+
+.E-mail {
+  margin-top: 10px;
+}
+
+.logoWCS {
+  height: 25px;
+  width: 75px;
+}
+
+.logoWCS:hover {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* NEWSLETTER */
+
+.enterEmail {
+  display: block;
+}
+
+.inputEmail1 {
+  margin: 0.4rem 0;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  padding: 0.3em 0.3em 0.3em 0.3em;
+}
+
+.inputEmail2 {
+  margin: 0.4rem 0;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  padding: 0.3em 0.3em 0.3em 0.3em;
+  cursor: pointer;
+}
+
+.inputEmail2:hover {
+  background-color: #ced1ce;
+}
+
+.inputEmail2:active {
+  background-color: #ced1ce;
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
+}
+
+/* **********PARTIE RESPONSIVE********** */
+/* fait par nicolas */
